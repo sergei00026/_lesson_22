@@ -191,7 +191,7 @@ h6 {
   background: #999;
   padding: 20px;
   margin: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .title {
@@ -201,29 +201,33 @@ h6 {
   font-weight: 700;
 }
 
-.input-text {
+.input-text,
+.textarea-text {
   max-width: 350px;
+  min-width: 270px;
   padding: 5px 10px;
   border: 2px solid rgb(219, 97, 97);
+  font-family: inherit;
 }
 
-.input-text::-webkit-input-placeholder {
+.input-text::-webkit-input-placeholder, .textarea-text::-webkit-input-placeholder {
   font-size: 12px;
 }
 
-.input-text::-moz-placeholder {
+.input-text::-moz-placeholder, .textarea-text::-moz-placeholder {
   font-size: 12px;
 }
 
-.input-text:-ms-input-placeholder {
+.input-text:-ms-input-placeholder, .textarea-text:-ms-input-placeholder {
   font-size: 12px;
 }
 
-.input-text::-ms-input-placeholder {
+.input-text::-ms-input-placeholder, .textarea-text::-ms-input-placeholder {
   font-size: 12px;
 }
 
-.input-text::placeholder {
+.input-text::placeholder,
+.textarea-text::placeholder {
   font-size: 12px;
 }
 
@@ -233,6 +237,8 @@ h6 {
   display: inline-flex;
   padding: 5px 10px;
   background: #fff;
+  font-weight: 700;
+  font-family: inherit;
 }
 
 .body {
@@ -252,12 +258,12 @@ h6 {
   gap: 10px;
 }
 
-.cacl-square__result._active-cacl-square {
+.calc-square__result._active-calc-square {
   background: #fff;
   padding: 5px 10px;
 }
 
-.cacl-square__img {
+.calc-square__img {
   padding: 20px;
   border: 3px solid black;
   -webkit-box-flex: 0;
@@ -267,12 +273,12 @@ h6 {
   margin: 0px 0px 0px 20px;
 }
 
-.cacl-rectangle__result._active-cacl-rectangle {
+.calc-rectangle__result._active-calc-rectangle {
   background: #fff;
   padding: 5px 10px;
 }
 
-.cacl-rectangle__img {
+.calc-rectangle__img {
   padding: 20px;
   border: 3px solid black;
   -webkit-box-flex: 0;
@@ -280,4 +286,111 @@ h6 {
           flex: 0 0 240px;
   height: 140px;
   margin: 0px 0px 0px 20px;
+}
+
+.calc-circle__result._active-calc-circle {
+  background: #fff;
+  padding: 5px 10px;
+}
+
+.calc-circle__img {
+  padding: 20px;
+  border: 3px solid black;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 180px;
+          flex: 0 0 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0px 0px 0px 20px;
+}
+
+.calc-triangle__result._active-calc-circle {
+  background: #fff;
+  padding: 5px 10px;
+}
+
+.calc-triangle__img {
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 100px;
+  border-left-width: 100px;
+  border-bottom: 200px solid black;
+  margin: 0px 0px 0px 20px;
+}
+
+.math-pif__result._active-math-pif {
+  background: #fff;
+  padding: 5px 10px;
+}
+
+.math-pif__img {
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+.math-del__result._active-math-del {
+  background: #fff;
+  padding: 5px 10px;
+}
+
+.math-del__img {
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+.text-focus__result._active-text-focus {
+  background: #fff;
+  padding: 5px 10px;
+}
+
+.text-focus__img {
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+.game-num__result._active-game-num {
+  background: #fff;
+  padding: 5px 10px;
+}
+
+.game-num__img {
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
 }
