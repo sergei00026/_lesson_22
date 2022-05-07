@@ -164,6 +164,43 @@
         }
     }));
     console.log(gameNumRandom);
+    const gameYearForm = document.querySelector(".game-year__form");
+    console.log(gameYearForm);
+    const gameYearNum = document.querySelector(".game-year__num");
+    console.log(gameYearNum);
+    const gameYearBtn = document.querySelector(".game-year__btn");
+    console.log(gameYearBtn);
+    const gameYearResult = document.querySelector(".game-year__result");
+    console.log(gameYearResult);
+    gameYearForm.addEventListener("submit", (function(event) {
+        gameYearNum.addEventListener("keyup", (function(event) {
+            if (13 == event.which || 13 == event.code) {
+                if (2012 == gameYearNum.value) gameYearResult.innerHTML = `\n\t\t\t\t<div class="game-year__big-box">\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2012[0]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2012[1]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t<div class="game-year__js">${yearn2012[2]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>`;
+                if (2013 == gameYearNum.value) gameYearResult.innerHTML = `\n\t\t\t\t<div class="game-year__big-box">\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2013[0]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2013[1]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t<div class="game-year__js">${yearn2013[2]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>`;
+                if (2014 == gameYearNum.value) gameYearResult.innerHTML = `\n\t\t\t\t<div class="game-year__big-box">\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2014[0]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2014[1]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t<div class="game-year__js">${yearn2014[2]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>`;
+                if (2015 == gameYearNum.value) gameYearResult.innerHTML = `\n\t\t\t\t<div class="game-year__big-box">\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2015[0]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2015[1]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t<div class="game-year__js">${yearn2015[2]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>`;
+                if (2016 == gameYearNum.value) gameYearResult.innerHTML = `\n\t\t\t\t<div class="game-year__big-box">\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2016[0]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2016[1]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t<div class="game-year__js">${yearn2016[2]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>`;
+            }
+        }));
+        event.preventDefault();
+    }));
+    gameYearBtn.addEventListener("click", (function() {
+        if (2012 == gameYearNum.value) gameYearResult.innerHTML = `\n\t\t\t\t<div class="game-year__big-box">\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2012[0]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2012[1]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t<div class="game-year__js">${yearn2012[2]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>`;
+        if (2013 == gameYearNum.value) gameYearResult.innerHTML = `\n\t\t\t\t<div class="game-year__big-box">\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2013[0]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2013[1]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t<div class="game-year__js">${yearn2013[2]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>`;
+        if (2014 == gameYearNum.value) gameYearResult.innerHTML = `\n\t\t\t\t<div class="game-year__big-box">\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2014[0]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2014[1]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t<div class="game-year__js">${yearn2014[2]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>`;
+        if (2015 == gameYearNum.value) gameYearResult.innerHTML = `\n\t\t\t\t<div class="game-year__big-box">\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2015[0]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2015[1]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t<div class="game-year__js">${yearn2015[2]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>`;
+        if (2016 == gameYearNum.value) gameYearResult.innerHTML = `\n\t\t\t\t<div class="game-year__big-box">\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2016[0]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t\t<div class="game-year__js">${yearn2016[1]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class="game-year__box">\n\t\t\t\t\t<div class="game-year__js">${yearn2016[2]}</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>`;
+    }));
+    let yearn2012 = [ "13.01.2012.", "круизный лайнер Costa Concordia, на борту которого находились 4234 человека, потерпел крушение", "13 января круизный лайнер Costa Concordia, на борту которого находились 4234 человека, потерпел крушение у берегов Италии. Погибли 30 человек, двое пропали без вести. Шесть человек были признаны виновными. Самое суровое наказание понес капитан Франческо Скеттино. Он был приговорен к 16 годам заключения. В 2014 году «Коста Конкордия» была поднята и отправлена на утилизацию. После катастрофы были ужесточены правила морского судоходства и прохождения пассажирами предрейсового инструктажа." ];
+    let yearn2013 = [ "01.01.2013.", "1 января в России вступил в силу закон, запрещающий американским гражданам усыновление российских детей", "1 января в России вступил в силу закон, запрещающий американским гражданам усыновление российских детей («Закон Димы Яковлева»). Название этот акт получил в честь 21-месячного усыновленного из России малыша. Он погиб в 2008 году по вине приемного отца Майлса Харрисона, который забыл ребенка в машине на жаре. Мужчина позднее был оправдан судом." ];
+    let yearn2014 = [ "02.021.2014.", " 2 февраля сборная России одержала победу на 34-м чемпионате мира по хоккею с мячом.", " Так, 2 февраля сборная России одержала победу на 34-м чемпионате мира по хоккею с мячом. В четвертьфинальном матче Швеция – Белоруссия (33:5) был побит рекорд чемпионатов мира по результативности. Чемпионом мира в восьмой раз стала сборная России." ];
+    let yearn2015 = [ "04.01.2015.", "В начале января. «Левиафан» остался без «Оскара».", "В начале января. «Левиафан» остался без «Оскара». В центре внимания общественности в январе был фильм режиссера Андрея Звягинцева «Левиафан». Картину о коррупции и проблемах российской глубинки могли бы и не заметить, но лента была номинирована на «Оскар». Промолчали о фильме только ленивые и немые." ];
+    let yearn2016 = [ "01.01.2016.", "вступил в силу запрет ввозить в Россию турецкие товары", "1 января вступил в силу запрет ввозить в Россию турецкие товары, нанимать на работу граждан, принятый в связи с ухудшением российско-турецких отношений после инцидента со сбитым российским бомбардировщиком." ];
+    const showMoreTextAdd = document.querySelector(".show-more__text_add");
+    const showMoreBtn = document.querySelector(".show-more__btn");
+    showMoreBtn.addEventListener("click", (function(e) {
+        showMoreTextAdd.hidden = false;
+    }));
     window["FLS"] = true;
     isWebp();
 })();
